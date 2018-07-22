@@ -1,3 +1,5 @@
-<p>
-  container works!
-</p>
+<div class="ui-g ui-fluid">
+  <ng-container *ngFor='let tile of innerTiles'>
+    <app-dynamic-tile [tile]='tile'></app-dynamic-tile>
+  </ng-container>
+</div>

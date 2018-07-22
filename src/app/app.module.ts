@@ -14,6 +14,8 @@ import { AppAuthModule } from '@app/auth/auth.module';
 import { AppRoutingModule } from '@app/app.router';
 import { AppLayoutModule } from '@app/layout';
 import { PagesModule } from '@app/pages';
+import { AppTileModule } from '@app/features';
+import { AppDashboardModule } from '@app/features';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +25,9 @@ import { PagesModule } from '@app/pages';
     AppAuthModule,
     AppLayoutModule,
     PagesModule,
+    AppDashboardModule,
+    AppTileModule,
+
     StoreModule.forRoot({
       applicationState: reducer
     }),
