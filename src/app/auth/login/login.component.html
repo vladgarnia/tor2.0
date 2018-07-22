@@ -1,0 +1,27 @@
+<div class="row">
+  <p-card class="col-md-4 offset-md-4" [title]="title" [subtitle]='subtitle'>
+    <form [formGroup]='loginForm' class="flex-column">
+      <div class="ui-inputgroup">
+        <input pInputText id="email" formControlName='email' [formGroup]='loginForm' type="email" placeholder="Email address">
+      </div>
+      <div class="ui-inputgroup">
+        <input pInputText id="password" formControlName='password' [formGroup]='loginForm' type="password" placeholder="Password">
+      </div>
+      <p-checkbox binary="true" [formGroup]='loginForm' formControlName='rememberMe' label='Remember me on this device.' name="rememberDevice"></p-checkbox>
+      <p-footer>
+        <div class="full-width-button-container">
+          <button pButton type="button" [disabled]='loginForm.invalid' label="Login" (click)='login()'></button>
+        </div>
+        <br/>
+        <div class="flex-row flex-space-between">
+          <a class="classic-anchor" [routerLink]="['/auth/login']">Register</a>
+          <span>Don't have an account?</span>
+        </div>
+        <div class="flex-row flex-space-between">
+          <a class="classic-anchor" [routerLink]="['/auth/reset-password']">Reset Password</a>
+          <span>Forgot your password?</span>
+        </div>
+      </p-footer>
+    </form>
+  </p-card>
+</div>

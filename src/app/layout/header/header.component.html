@@ -1,0 +1,12 @@
+<p-toolbar class="toolbar-container">
+  <div class="ui-toolbar-group-left header-group">
+    <div class="search">
+      <span class="fa fa-search"></span>
+      <input placeholder="Search">
+    </div>
+  </div>
+  <div class="ui-toolbar-group-right header-group">
+    <p-button class="auth-button" [routerLink]="['/auth/login']" *ngIf='!user' label="Login" icon='fa fa-sign-in-alt' iconPos='left'></p-button>
+    <p-button class="auth-button" [routerLink]="['/auth/register']" *ngIf='!user' label="Register" icon='fa fa-user-plus' iconPos='left'></p-button>
+  </div>
+</p-toolbar>

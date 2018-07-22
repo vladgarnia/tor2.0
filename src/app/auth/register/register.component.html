@@ -1,0 +1,20 @@
+<div class="row">
+  <p-card class="col-md-4 offset-md-4" [title]="title" [subtitle]='subtitle'>
+    <form [formGroup]='registerForm' class="flex-column">
+      <div class="ui-inputgroup">
+        <input pInputText id="email" formControlName='email' [formGroup]='registerForm' type="text" placeholder="Email address">
+      </div>
+      <div class="ui-inputgroup">
+        <input pInputText id="firstName" formControlName='firstName' [formGroup]='registerForm' type="text" placeholder="First name">
+      </div>
+      <div class="ui-inputgroup">
+        <input pInputText id="lastName" formControlName='lastName' [formGroup]='registerForm' type="text" placeholder="Last name">
+      </div>
+      <p-footer>
+        <div class="full-width-button-container">
+          <button pButton type="button" [disabled]='registerForm.invalid' label="Register"></button>
+        </div>
+      </p-footer>
+    </form>
+  </p-card>
+</div>

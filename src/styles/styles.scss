@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* colors */
+
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~styles/variables";
+html {
+  height: 100%;
+}
+
+html,
+body,
+.root {
+  margin: 0;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1;
+  max-height: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.classic-anchor {
+  color: $primary-blue !important;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.sidebar-menu-subitem>a {
+  padding-left: 24px !important;
+  margin: 0 !important;
+}
+
+.full-width-button-container>button {
+  width: 100%;
+}

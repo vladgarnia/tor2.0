@@ -1,0 +1,19 @@
+@import "~../../../../../styles/variables";
+:host {
+  height: 100%;
+}
+
+.sidebar-header {
+  background-color: $primary-blue;
+  height: 40px;
+  border-bottom: 1px solid silver;
+  color: white;
+  padding-top: 4px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.sidebar-content {
+  border-right: 1px solid silver;
+  height: 100%;
+}

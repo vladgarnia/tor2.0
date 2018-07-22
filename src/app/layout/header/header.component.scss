@@ -1,0 +1,38 @@
+@import "~../../../../../styles/variables";
+:host,
+.ui-toolbar {
+  height: 40px;
+  background: $primary-blue;
+}
+
+.sidebar-toggle-button {
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  position: relative;
+}
+
+.search input {
+  text-indent: 30px;
+  border-radius: 16px;
+  border: 1px solid silver;
+  min-width: 360px;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  font-size: 15px;
+  color: silver;
+}
+
+.auth-button {
+  margin-right: 8px;
+}

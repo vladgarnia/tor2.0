@@ -1,0 +1,14 @@
+<app-flash-message></app-flash-message>
+<div class="main-layout">
+  <div class="app-left-sidenav">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="app-main-content">
+    <app-header [user]='user$ | async' (openSidebar)='sidebarOpen = true' (logout)='logout()'></app-header>
+    <div class="main-content">
+      <div class="content-container">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

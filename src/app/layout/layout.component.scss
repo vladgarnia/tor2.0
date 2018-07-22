@@ -1,0 +1,42 @@
+:host {
+  width: 100%;
+  height: 100%;
+}
+
+.main-layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.app-left-sidenav {
+  width: 260px;
+}
+
+.app-main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-container {
+  width: 100%;
+  height: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-content {
+  width: 260px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content-container {
+  flex-grow: 1;
+  padding-top: 16px;
+}

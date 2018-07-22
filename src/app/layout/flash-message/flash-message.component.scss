@@ -1,0 +1,14 @@
+:host {
+  position: fixed;
+  top: 8%;
+  left: 0;
+  z-index: 1200;
+  width: 100%;
+  pointer-events: none;
+}
+
+.flash-message-container {
+  height: 100%;
+  width: 100%;
+  height: 90px;
+}
